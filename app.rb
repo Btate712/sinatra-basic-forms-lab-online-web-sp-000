@@ -10,6 +10,7 @@ class App < Sinatra::Base
   end
 
   post '/puppy' do
+    puts params
     @name = params[:name]
     @breed = params[:breed]
     @months_old = params[:age]
