@@ -13,7 +13,7 @@ class App < Sinatra::Base
     puts params
     @name = params[:name]
     @breed = params[:breed]
-    @months_old = params[:age]
+    @age = params[:age]
     erb :display_puppy
   end
 end
